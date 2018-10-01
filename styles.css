@@ -1,0 +1,440 @@
+/**{
+  border: solid 1px black;
+}
+*/
+
+html,
+body,
+div,
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    margin: 14px;
+    font-size: .9rem;
+}
+
+.center-parent {
+    text-align: center;
+}
+
+.heading-box {
+    background-color: #f83;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.logo {
+    width: 20%;
+}
+
+.page-title {
+    color: white;
+    font-size: 100%;
+}
+
+.navigation-box {
+    width: 100%;
+    text-align: center;
+    margin: 14px 0px 14px 0px;
+}
+
+.nav-item-box {
+    display: inline-block;
+    width: 20%;
+}
+
+.nav-item {
+    color: #c24;
+    text-decoration-color: #5af;
+    transition: .3s;
+}
+
+.nav-item:hover {
+    color: #5af;
+    text-decoration-color: #c24;
+}
+
+.projects-dropdown {
+    text-align: center;
+    display: none;
+    padding: 2%;
+}
+
+.projects-item {
+    color: #c24;
+    text-decoration-color: #5af;
+    transition: .3s;
+}
+
+.projects-item:hover {
+    color: #5af;
+    text-decoration-color: #c24;
+}
+
+.projects:hover .projects-dropdown {
+    display: block;
+    z-index: 5;
+    color: blue;
+}
+
+.displaying {
+    display: none;
+}
+
+.hovering:hover .displaying {
+    display: block;
+}
+
+header {
+    max-width: 600px;
+}
+
+/*W3 Schools Code below*/
+
+.navbar {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #f84;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f84;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #c24;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: .3s;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main-image {
+    width: 50%;
+    padding: 14px;
+}
+
+/*W3 Schools Code above*/
+
+.article-parent {
+    max-width: 450px;
+    height: 15em;
+    display: block;
+    margin: 24px;
+    padding: 12px;
+    transition: .3s;
+}
+
+.article-parent:hover {
+    box-shadow: 1px 1px 1px #999;
+}
+
+.article-parent:hover .article-title {
+    background-color: #333;;
+}
+
+.article-image {
+    width: 50%;
+    float: left;
+    margin-right: 24px;
+}
+
+.article-title {
+    padding: 12px;
+    background-color: #f84;
+    color: white;
+    font-size: 80%;
+    transition: .3s;
+}
+
+.article-preview {
+    color: #666;
+    font-size: 70%;
+}
+
+.article-parent a {
+    text-decoration-color: #5af;
+    color: #f84;
+    font-size: 80%;
+}
+
+.article-parent a:visited {
+    text-decoration-color: #f84;
+    color: #5af;
+}
+
+footer {
+    background-color: #f84;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: inline-block;
+    margin-top: 24px;
+}
+
+.righteous-txt {
+    font-family: 'Righteous', cursive;
+}
+
+.footer-link-parent {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 50%;
+    border-right: solid thin #333;;
+    float: left;
+}
+
+.footer-links {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+    margin: 8px;
+    font-size: .9rem;
+}
+
+.footer-links:hover {
+    color: #fffeef;
+    text-decoration: underline;
+    text-decoration-color: #333;
+}
+
+.social-link-parent {
+    text-align: center;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.social-link-parent a {
+    text-decoration: none;
+}
+
+.social-image {
+    width: 30px;
+    margin: 8px;
+}
+
+/*Article page styles below*/
+
+.heading-article-image {
+    width: 60%;
+    border: none;
+    border-radius: 2%;
+    margin: 12px;
+    box-shadow: 2px 2px 1px #777;
+}
+
+.materials-parent {
+    display: inline-block;
+}
+
+.materials-image {
+    padding: 14px;
+    width: 50%;
+    max-width: 400px;
+}
+
+.material-list {
+    float: left;
+}
+
+.intro-image-box {
+    padding: 14px;
+    text-align: center;
+}
+
+.steps-text {
+    color: #f84;
+    font-size: 150%;
+    text-decoration: underline;
+    text-decoration-color: #333;;
+}
+
+.materials-parent ul p {
+    text-indent: unset;
+}
+
+.materials-parent li {
+    font-weight: inherit;
+}
+
+.step-image {
+    width: 44%;
+    padding-left: 14px;
+    padding-top: 14px;
+    transition: .3s;
+}
+
+.step-image:hover {
+    transform: scale(1.5);
+    z-index: 5;
+    padding: 0;
+}
+
+.ending-banner {
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.title {
+    font-size: 200%;
+    color: white;
+}
+
+.header-two-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-two-container a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.header-two-text {
+    border-bottom: solid 4px #f83;
+    transition: .3s;
+    padding: 4px;
+}
+
+.header-two-text:hover {
+    border-bottom: dotted 4px #333;
+}
+
+.event-card {
+    background-color: #fffeff;
+}
+
+.event-card-image {
+    margin-right: 24px;
+    width: 30%;
+}
+
+.event-card-title{
+    font-size: 1.5em;
+}
+
+.header{
+  padding: 24px;
+  margin-bottom: 48px;
+}
+
+.logo-box{
+    text-align: center;
+}
+
+.content-box{
+  display: block;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.special-text{
+    font-size: 120%;
+    color: #f83;
+}
+
+
+/*slide show below*/
+
+
+.slide-show-parent {
+    text-align: center;
+    width: 60%;
+}
+
+.slide-image {
+    border: solid 2px #fffeff;
+    display: none;
+    margin-top: 24px;
+ 
+}
+
+.trick-tips:hover .link-box{
+  display: initial;
+}
+
+.link-box-parent{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.link-box{
+    margin: 8px;
+    display: none;
+}
+
+/*slide show above*/
